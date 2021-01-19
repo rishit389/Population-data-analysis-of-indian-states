@@ -1,0 +1,372 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data=pd.read_csv("population_data.csv")
+
+def state(s):
+    data=pd.read_csv("population_data.csv")
+    if s=='jammu and kashmir':
+        print(data.head(22))
+        plt.plot(data['District_name'].iloc[0:22],data['Population'].iloc[0:22])
+        plt.title("Population Data of Jammu and Kashmir")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='himachal pradesh':
+        print(data.iloc[22:34])
+        plt.plot(data['District_name'].iloc[22:34],data['Population'].iloc[22:34])
+        plt.title("Population Data of himachal pradesh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='punjab':
+        print(data.iloc[34:54])
+        plt.plot(data['District_name'].iloc[34:54],data['Population'].iloc[34:54])
+        plt.title("Population Data of Punjab")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='chandigarh':
+        print(data.iloc[54:55])
+        plt.plot(data['District_name'].iloc[54:55],data['Population'].iloc[54:55])
+        plt.title("Population Data of Chandigarh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='uttrakhand':
+        print(data.iloc[55:68])
+        plt.plot(data['District_name'].iloc[55:68],data['Population'].iloc[55:68])
+        plt.title("Population Data of Uttrakhand")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='haryana':
+        print(data.iloc[68:89])
+        plt.plot(data['District_name'].iloc[68:89],data['Population'].iloc[68:89])
+        plt.title("Population Data of Haryana")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='delhi':
+        print(data.iloc[89:98])
+        plt.plot(data['District_name'].iloc[89:98],data['Population'].iloc[89:98])
+        plt.title("Population Data of Delhi")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='rajasthan':
+        print(data.iloc[98:131])
+        plt.plot(data['District_name'].iloc[98:131],data['Population'].iloc[98:131])
+        plt.title("Population Data of Rajasthan")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='uttar pradesh':
+        print(data.iloc[131:202])
+        plt.plot(data['District_name'].iloc[131:202],data['Population'].iloc[131:202])
+        plt.title("Population Data of Uttar Pradesh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='bihar':
+        print(data.iloc[202:240])
+        plt.plot(data['District_name'].iloc[202:240],data['Population'].iloc[202:240])
+        plt.title("Population Data of Bihar")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit() 
+    if s=='sikkim':
+        print(data.iloc[240:244])
+        plt.plot(data['District_name'].iloc[240:244],data['Population'].iloc[240:244])
+        plt.title("Population Data of Sikkim")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='arunachal pradesh':
+        print(data.iloc[244:260])
+        plt.plot(data['District_name'].iloc[244:260],data['Population'].iloc[244:260])
+        plt.title("Population Data of Arunachal Pradesh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='nagaland':
+        print(data.iloc[260:271])
+        plt.plot(data['District_name'].iloc[260:271],data['Population'].iloc[260:271])
+        plt.title("Population Data of Nagaland")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='manipur':
+        print(data.iloc[271:280])
+        plt.plot(data['District_name'].iloc[271:280],data['Population'].iloc[271:280])
+        plt.title("Population Data of Manipur")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='mizoram':
+        print(data.iloc[280:288])
+        plt.plot(data['District_name'].iloc[280:288],data['Population'].iloc[280:288])
+        plt.title("Population Data of Mizoram")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='tripura':
+        print(data.iloc[288:292])
+        plt.plot(data['District_name'].iloc[288:292],data['Population'].iloc[288:292])
+        plt.title("Population Data of Tripura")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='meghalaya':
+        print(data.iloc[292:299])
+        plt.plot(data['District_name'].iloc[292:299],data['Population'].iloc[292:299])
+        plt.title("Population Data of Meghalaya")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='assam':
+        print(data.iloc[299:326])
+        plt.plot(data['District_name'].iloc[299:326],data['Population'].iloc[299:326])
+        plt.title("Population Data of Assam")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='west bengal':
+        print(data.iloc[326:345])
+        plt.plot(data['District_name'].iloc[326:345],data['Population'].iloc[326:345])
+        plt.title("Population Data of West Bengal")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='jharkhand':
+        print(data.iloc[345:369])
+        plt.plot(data['District_name'].iloc[345:369],data['Population'].iloc[345:369])
+        plt.title("Population Data of Jharkhand")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='orissa':
+        print(data.iloc[369:399])
+        plt.plot(data['District_name'].iloc[369:399],data['Population'].iloc[369:399])
+        plt.title("Population Data of Orissa")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='chhattisgarh':
+        print(data.iloc[399:417])
+        plt.plot(data['District_name'].iloc[399:417],data['Population'].iloc[399:417])
+        plt.title("Population Data of Chhattisgarh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='madhya pradesh':
+        print(data.iloc[417:467])
+        plt.plot(data['District_name'].iloc[417:467],data['Population'].iloc[417:467])
+        plt.title("Population Data of Madhya Pradesh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='gujarat':
+        print(data.iloc[467:493])
+        plt.plot(data['District_name'].iloc[467:493],data['Population'].iloc[467:493])
+        plt.title("Population Data of Gujarat")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='daman and diu':
+        print(data.iloc[493:495])
+        plt.plot(data['District_name'].iloc[493:495],data['Population'].iloc[493:495])
+        plt.title("Population Data of Daman and Diu")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='dadra and nagar haveli':
+        print(data.iloc[495:496])
+        plt.plot(data['District_name'].iloc[495:496],data['Population'].iloc[495:496])
+        plt.title("Population Data of Dadra and Nagar haveli")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='maharashtra':
+        print(data.iloc[496:531])
+        plt.plot(data['District_name'].iloc[496:531],data['Population'].iloc[496:531])
+        plt.title("Population Data of Maharashtra")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='andhra pradesh':
+        print(data.iloc[531:554])
+        plt.plot(data['District_name'].iloc[531:554],data['Population'].iloc[531:554])
+        plt.title("Population Data of Andhra Pradesh")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='karnataka':
+        print(data.iloc[554:584])
+        plt.plot(data['District_name'].iloc[554:584],data['Population'].iloc[554:584])
+        plt.title("Population Data of Karnataka")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='goa':
+        print(data.iloc[584:586])
+        plt.plot(data['District_name'].iloc[584:586],data['Population'].iloc[584:586])
+        plt.title("Population Data of Goa")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='lakshadweep':
+        print(data.iloc[586:587])
+        plt.plot(data['District_name'].iloc[586:587],data['Population'].iloc[586:587])
+        plt.title("Population Data of Lakshadweep")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='kerala':
+        print(data.iloc[587:601])
+        plt.plot(data['District_name'].iloc[587:601],data['Population'].iloc[587:601])
+        plt.title("Population Data of Kerala")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='tamil nadu':
+        print(data.iloc[601:633])
+        plt.plot(data['District_name'].iloc[601:633],data['Population'].iloc[601:633])
+        plt.title("Population Data of Tamil Nadu")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='pondicherry':
+        print(data.iloc[633:637])
+        plt.plot(data['District_name'].iloc[633:637],data['Population'].iloc[633:637])
+        plt.title("Population Data of Pondicherry")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+    if s=='andaman and nicobar islands':
+        print(data.iloc[637:639])
+        plt.plot(data['District_name'].iloc[637:639],data['Population'].iloc[637:639])
+        plt.title("Population Data of Andaman and Nicobar islands")
+        plt.show()
+        j=input("do you want data of another state(y/n): ") 
+        if j=="y":
+            return
+        if j=="n":
+            exit()
+            
+            
+while True:
+    print("**********Art Integrated Project IP**********")
+    print("")
+    print("Population data of all the states of india (census 2011)")
+    print("MENU")
+    print("1. Data analysis using Graphs and Tables.")
+    print("2. Exit program.")
+    ch=int(input("Enter your choice: "))
+    if ch==1:
+        s=input("Enter the name of state to get the population data: ")
+        state(s)
+    if ch==2:
+        break
